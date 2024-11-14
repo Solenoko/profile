@@ -1,0 +1,143 @@
+h1 {
+  color: #38bdce;
+  font-family: "Sour Gummy", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+h2, h3 {
+  color: #ce3a38;
+  font-family: "Sour Gummy", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+
+body {
+  background-image: url('images/background.jpg');
+  background-size: cover;
+  height: 100vh;
+  background-position: center;
+}
+
+p {
+  color: #da6458;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+i {
+  color: #da6458;
+  text-decoration: none;
+  font-size: 30px;
+  display: inline-flex;
+}
+
+.profile-picture {
+  width: 300px;
+  border-radius: 5%;
+  box-shadow: 0px 0px 15px #c971cc;
+}
+
+.list-inline {
+  padding: 0px;
+}
+
+.list-inline li {
+  display: inline-block;
+}
+
+.game {
+  color: #38bdce;
+  font-size: 10px;
+}
+
+.btn-red {
+  background-color: #da6458;
+  color: #e8ceb3;
+  text-decoration: none;
+  padding: 4px 12px;
+  border-radius: 4px;
+}
+
+.blue-font {
+  color: #38bdce;
+}
+
+.btn-blue {
+  background-color: #5f90d1;
+  color: #e8ceb3;
+  text-decoration: none;
+  padding: 4px 12px;
+  border-radius: 4px;
+}
+
+.btn-blue:hover {
+  background-color: #0f5392;
+}
+
+.btn-red:hover {
+  background-color: #920f15;
+}
+
+.link-media:hover {
+  color: #920f15;
+  filter: brightness(0) saturate(100%) invert(50%) sepia(100%) saturate(500%) hue-rotate(330deg);
+}
+
+
+.left-element {
+  display: inline-block;
+  margin-left: 10px;
+  margin-top: 15px;
+  text-align: center;
+  padding-bottom: 15px;
+  width: 25%;
+  box-shadow: 0px 0px 10px #c971cc;
+}
+
+.middle-element {
+  display: inline-flex;
+  margin-bottom: 100px;
+  margin-left: 55px;
+  text-align: center;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 15px;
+  width: 20%;
+  box-shadow: 0px 0px 10px #71c9cc;
+}
+
+.middle-element-right {
+  display: inline-flex;
+  margin-bottom: 10px;
+  margin-left: 55px;
+  text-align: center;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  padding-bottom: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+  width: 35%;
+  box-shadow: 0px 0px 10px #c971cc;
+}
+
+.right-element {
+  display: inline-flex;
+  margin-top: 50px;
+  margin-left: 1290px;
+  text-align: center;
+  justify-content: space-around;
+  unicode-bidi: isolate;
+  width: 13%;
+  box-shadow: 0px 0px 10px #71c9cc;
+}
