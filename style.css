@@ -1,9 +1,11 @@
 h1 {
-  color: #920f15;
-  font-family: "Dancing Script", cursive;
+  color: #38bdce;
+  font-family: "Sour Gummy", sans-serif;
   font-optical-sizing: auto;
   font-weight: <weight>;
   font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
 }
 
 h2, h3 {
@@ -16,6 +18,14 @@ h2, h3 {
     "wdth" 100;
 }
 
+
+body {
+  background-image: url('images/background.jpg');
+  background-size: cover;
+  height: 100vh;
+  background-position: center;
+}
+
 p {
   color: #da6458;
   font-family: "M PLUS Rounded 1c", sans-serif;
@@ -24,26 +34,16 @@ p {
 }
 
 i {
+  color: #da6458;
   text-decoration: none;
-}
-
-a:hover {
-  color: red;
-  font-size: 23px;
-}
-
-.card-white {
-  background-color: #e8ceb3;
-  box-shadow: 0px 0px 30px #7a635b;
-  padding: 20px;
-  text-align: center;
-  margin: 20px 0;
+  font-size: 30px;
+  display: inline-flex;
 }
 
 .profile-picture {
-  width: 100px;
-  border-radius: 50%;
-  box-shadow: 0px 0px 30px #7a635b;
+  width: 300px;
+  border-radius: 5%;
+  box-shadow: 0px 0px 15px #c971cc;
 }
 
 .list-inline {
@@ -51,5 +51,91 @@ a:hover {
 }
 
 .list-inline li {
-  display: inline;
+  display: inline-block;
+}
+
+.game {
+  color: #38bdce;
+  font-size: 10px;
+}
+
+.btn-red {
+  background-color: #da6458;
+  color: #e8ceb3;
+  text-decoration: none;
+  padding: 4px 12px;
+  border-radius: 4px;
+}
+
+.blue-font {
+  color: #38bdce;
+}
+
+.btn-blue {
+  background-color: #5f90d1;
+  color: #e8ceb3;
+  text-decoration: none;
+  padding: 4px 12px;
+  border-radius: 4px;
+}
+
+.btn-blue:hover {
+  background-color: #0f5392;
+}
+
+.btn-red:hover {
+  background-color: #920f15;
+}
+
+.link-media:hover {
+  color: #920f15;
+  filter: brightness(0) saturate(100%) invert(50%) sepia(100%) saturate(500%) hue-rotate(330deg);
+}
+
+
+.left-element {
+    display: inline-block;
+    margin-left: 35px;
+    margin-top: 50px;
+    text-align: center;
+    padding-bottom: 15px;
+    width: 25%;
+    box-shadow: rgb(201, 113, 204) 0px 0px 10px;
+}
+
+.middle-element {
+    display: inline-flex;
+    margin-left: 130px;
+    text-align: center;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 15px;
+    width: 20%;
+    box-shadow: rgb(113, 201, 204) 0px 0px 10px;
+}
+
+.middle-element-right {
+    display: inline-flex;
+    margin-bottom: 10px;
+    margin-left: 130px;
+    text-align: center;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 35%;
+    box-shadow: rgb(201, 113, 204) 0px 0px 10px;
+}
+
+.right-element {
+  display: block;
+  margin-top: 250px;
+  margin-left: 1600px;
+  text-align: center;
+  padding-bottom: 5px;
+  width: 13%;
+  box-shadow: rgb(113, 201, 204) 0px 0px 10px;
 }
