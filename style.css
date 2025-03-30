@@ -1,164 +1,190 @@
-h1 {
-  color: #38bdce;
-  font-family: "Sour Gummy", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-h2, h3 {
-  color: #ce3a38;
-  font-family: "Sour Gummy", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
+html, body {
+  height: 100%;
+  width: 100%;
 }
-
 
 body {
-  background-image: url('images/background.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  font-family: 'Roboto', sans-serif;
+  background: url('images/background.jpg') no-repeat center center/cover;
+  color: #fff;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-p {
-  color: #da6458;
-  font-family: "M PLUS Rounded 1c", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+.profile-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-i {
-  color: #da6458;
-  text-decoration: none;
-  font-size: 35px;
-  display: inline-flex;
-}
-
-.profile-picture {
-  width: 300px;
-  border-radius: 5%;
-  box-shadow: 0px 0px 15px #c971cc;
-}
-
-.list-inline {
-  padding: 0px;
-}
-
-.list-inline li {
-  display: inline-block;
-  margin: 0 10px;
-}
-
-.game {
-  color: #38bdce;
-  font-size: 10px;
-}
-
-.btn-red {
-  background-color: #da6458;
-  color: #e8ceb3;
-  text-decoration: none;
-  padding: 4px 12px;
-  border-radius: 4px;
-  transition: all 1s;
-}
-
-.blue-font {
-  color: #38bdce;
-}
-
-.btn-blue {
-  background-color: #5f90d1;
-  color: #e8ceb3;
-  text-decoration: none;
-  padding: 4px 12px;
-  border-radius: 4px;
-  transition: all 1s;
-}
-
-.btn-blue:hover {
-  background-color: #0f5392;
-}
-
-.btn-red:hover {
-  background-color: #920f15;
-}
-
-.link-media:hover > i {
-  color: #920f15;
-}
-
-.link-media > i {
-  transition: all 1s;
-}
-
-.left-element {
-    display: inline-block;
-    margin-top: 20px;
-    margin-left: 20px;
-    text-align: center;
-    padding-bottom: 15px;
-    box-shadow: rgb(201, 113, 204) 0px 0px 10px;
-}
-
-.middle-element {
-    display: inline-flex;
-    text-align: center;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    width: 80%;
-    margin-left: 50px;
-    padding-bottom: 15px;
-    box-shadow: rgb(113, 201, 204) 0px 0px 10px;
-}
-
-.middle-element-right {
-    display: inline-flex;
-    text-align: center;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-around;
-    padding-bottom: 10px;
-    padding-left: 5px;
-    padding-right: 5px;
-    box-shadow: rgb(201, 113, 204) 0px 0px 10px;
-}
-
-.right-element {
-  display: block;
+.left-section {
+  flex: 1 1 300px;
   text-align: center;
-  width: 60%;
-  margin-left: 50px;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: rgb(201, 113, 204) 0px 0px 10px;
+
+}
+
+.profile-img {
+  width: 250px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+}
+
+.greeting {
+  font-size: 32px;
+  font-family: "Sour Gummy", sans-serif;
+  color: #38bdce;
+  font-weight: bold;
+}
+
+.right-section {
+  flex: 2 1 600px;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 30px;
+  border-radius: 10px;
   box-shadow: rgb(113, 201, 204) 0px 0px 10px;
 }
 
-.container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 10px;
+.intro h2 {
+  font-size: 25px;
+  font-family: "Sour Gummy", sans-serif;
+  color: #ce3a38;
+  margin-bottom: 10px;
 }
 
-@media (max-width: 992px) {
-  .container {
-    max-width: 700px;
-  }
+.intro h3 {
+  font-size: 20px;
+  font-family: "Sour Gummy", sans-serif;
+  color: #38bdce;
+  text-align: left;
 }
+
+.highlight {
+  color: #ce3a38;
+}
+
+.about {
+  margin-top: 20px;
+}
+
+.section-title {
+  font-size: 30px;
+  font-family: "Sour Gummy", sans-serif;
+  text-align: center;
+  color: #38bdce;
+  margin-bottom: 10px;
+}
+
+.about-me {
+  font-size: 20px;
+  font-family: "Sour Gummy", sans-serif;
+  color: #ce3a38;
+  margin-bottom: 10px;
+}
+
+.game-quote {
+  font-size: 14px;
+  font-family: "Sour Gummy", sans-serif;
+  font-style: italic;
+  color: #38bdce;
+  margin-bottom: 20px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.btn {
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.red-btn {
+  background-color: #da6458;
+  color: #fff;
+  transition: all 0.5s ease;
+  border-radius: 50px;
+}
+
+.blue-btn {
+  background-color: #5f90d1;
+  color: #fff;
+  transition: all 0.5s ease;
+  border-radius: 50px;
+}
+
+.red-btn:hover {
+  background-color: #920f15;
+  transform: scale(1.2);
+}
+
+.blue-btn:hover {
+  background-color: #0f5392;
+  transform: scale(1.2);
+}
+
+.social-media {
+  margin-top: 30px;
+}
+
+.social-media h3 {
+  font-size: 20px;
+  font-family: "Sour Gummy", sans-serif;
+  text-align: center;
+  color: #ce3a38;
+  margin-bottom: 10px;
+}
+
+.social-icons {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.social-icon i {
+  font-size: 35px;
+  color: #da6458;
+  transition: all 0.5s ease;
+}
+
+.social-icon:hover i {
+  color: #5f90d1;
+  transform: scale(1.2);
+}
+
 @media (max-width: 768px) {
-  .container {
-    max-width: 500px;
-    display: block;
+  .profile-container {
+    flex-direction: column;
+    gap: 20px;
   }
-}
-@media (max-width: 576px) {
-  .container {
-    max-width: 100%;
-    padding: 10px;
+
+  .left-section {
+    width: 100%;
+  }
+
+  .right-section {
+    width: 100%;
   }
 }
